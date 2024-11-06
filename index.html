@@ -24,7 +24,7 @@
       <h1 id="page-title" class="sr-only">Results Summary Component</h1>
       <article class="results-summary-component" aria-labelledby="result-title">
         <!-- Result Section -->
-        <section class="result" aria-label="Your Result">
+        <div class="result" aria-labelledby="result-title">
           <h2 id="result-title" class="result__title">Your Result</h2>
           <div class="result__circle" aria-live="polite">
             <span class="result__score">76</span> of 100
@@ -33,24 +33,19 @@
           <p class="result__text">
             You scored higher than 65% of the people who have taken these tests.
           </p>
-        </section>
+        </div>
 
         <!-- Summary Section -->
-        <section class="summary" aria-labelledby="summary-title">
+        <div class="summary" aria-labelledby="summary-title">
           <h2 id="summary-title" class="summary__title">Summary</h2>
-          <ul
-            class="summary__list"
-            aria-label="Test Scores Summary"
-            id="list"
-          ></ul>
+          <ul class="summary__list" id="list"></ul>
           <button
             class="summary__button"
             aria-label="Continue to the next step"
-            role="button"
           >
             Continue
           </button>
-        </section>
+        </div>
       </article>
     </main>
 
