@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A results summary component that shows your score compared to others."
+    />
+    <!-- Ensures proper display on different devices -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <title>Results Summary Component | Frontend Mentor</title>
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main aria-labelledby="page-title">
+      <h1 id="page-title" class="sr-only">Results Summary Component</h1>
+      <article class="results-summary-component" aria-labelledby="result-title">
+        <!-- Result Section -->
+        <section class="result" aria-label="Your Result">
+          <h2 id="result-title" class="result__title">Your Result</h2>
+          <div class="result__circle" aria-live="polite">
+            <span class="result__score">76</span> of 100
+          </div>
+          <p class="result__string">Great</p>
+          <p class="result__text">
+            You scored higher than 65% of the people who have taken these tests.
+          </p>
+        </section>
+
+        <!-- Summary Section -->
+        <section class="summary" aria-labelledby="summary-title">
+          <h2 id="summary-title" class="summary__title">Summary</h2>
+          <ul
+            class="summary__list"
+            aria-label="Test Scores Summary"
+            id="list"
+          ></ul>
+          <button
+            class="summary__button"
+            aria-label="Continue to the next step"
+            role="button"
+          >
+            Continue
+          </button>
+        </section>
+      </article>
+    </main>
+
+    <!-- Footer Attribution -->
+    <footer class="attribution">
+      <p>
+        Challenge by
+        <a
+          class="attribution__link"
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Frontend Mentor</a
+        >. Coded by
+        <a
+          class="attribution__link"
+          href="https://rubendeman.nl"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Ruben de Man</a
+        >.
+      </p>
+    </footer>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
