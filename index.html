@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Results summary component</title>
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main>
+      <article class="results-summary-component">
+        <section class="results-summary-component__left">
+          <h2 class="result__title">Your Result</h2>
+          <div class="result__circle">
+            <span class="result__score">76</span>
+            <span class="result__of">of 100</span>
+          </div>
+          <span class="result__score-string"> Great</span>
+          <p class="result__text">
+            You scored higher than 65% of the people who have taken these tests.
+          </p>
+        </section>
+        <section class="results-summary-component__right">
+          <h2 class="summary__title">Summary</h2>
+          <ul class="summary__list" id="list"></ul>
+          <button class="summary__button">Continue</button>
+        </section>
+      </article>
+    </main>
+
+    <footer class="attribution">
+      <p>
+        Challenge by
+        <a
+          class="attribution__link"
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a
+          class="attribution__link"
+          href="https://rubendeman.nl"
+          target="_blank"
+          >Ruben de Man</a
+        >.
+      </p>
+    </footer>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
