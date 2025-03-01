@@ -177,6 +177,7 @@ main {
 .result__text {
   margin: 0 auto;
   max-width: 260px;
+  padding-bottom: 0.9rem;
 }
 
 .summary__title {
