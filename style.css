@@ -218,7 +218,6 @@ button {
   padding: var(--spacing-200) 1.1875rem;
   font-size: var(--text-preset-5-size);
   line-height: var(--text-preset-5-height);
-  letter-spacing: var(--text-preset-5-ls);
 }
 
 .summary-component__item--reaction {
@@ -306,7 +305,6 @@ button {
 
 .attribution__link {
   transition: color 0.3s ease-in-out;
-  color: hsl(var(--clr-teal-500));
   font-weight: 700;
   text-decoration: none;
 }
