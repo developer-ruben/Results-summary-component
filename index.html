@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <meta
+      name="description"
+      content="Results summary component showing user scores across categories with a clean and responsive design. Built as a Frontend Mentor challenge."
+    />
+
+    <meta
+      name="keywords"
+      content="frontend mentor, results summary component, HTML, CSS, JavaScript, responsive design, web development, UI component, score summary"
+    />
+
+    <meta name="author" content="Ruben de Man" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Results summary component</title>
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main>
+      <article class="summary-component">
+        <div class="summary-component__result">
+          <h2 class="summary-component__title">Your Result</h2>
+          <div class="summary-component__score">
+            <span class="summary-component__score-value">76</span> of 100
+          </div>
+          <div class="summary-component__bottom">
+            <strong class="summary-component__result-string">Great</strong>
+            <p class="summary-component__text">
+              You scored higher than 65% of the people who have taken these
+              tests.
+            </p>
+          </div>
+        </div>
+        <div class="summary-component__summary">
+          <h2 class="summary-component__title">Summary</h2>
+          <ul class="summary-component__list" id="score-list"></ul>
+          <button class="summary-component__button">
+            <span class="summary-component__button-text">Continue</span>
+          </button>
+        </div>
+      </article>
+    </main>
+
+    <footer class="attribution">
+      <p class="attribution__text">
+        Challenge by
+        <a
+          class="attribution__link"
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Frontend Mentor</a
+        >. Coded by
+        <a
+          class="attribution__link"
+          href="https://rubendeman.nl"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Ruben de Man</a
+        >.
+      </p>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
