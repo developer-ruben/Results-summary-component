@@ -1,18 +1,24 @@
-const scoreListEl = document.getElementById("score-list");
+document.addEventListener("DOMContentLoaded", (e) => {
+  const scoreListEl = document.getElementById("score-list");
 
-scoreListEl.innerHTML = "<li>Loading...</li>";
+  if (!scoreListEl) {
+    console.log("Score list element not found");
+    return;
+  }
 
-async function loadScores() {
-  try {
-    const res = await fetch("data.json");
+  scoreListEl.innerHTML = "<li>Loading...</li>";
 
-    if (!res.ok) throw new Error("Failed to fetch data");
+  async function loadScores() {
+    try {
+      const res = await fetch("data.json");
 
-    const data = await res.json();
+      if (!res.ok) throw new Error("Failed to fetch data");
 
-    const itemsHTML = data
-      .map(
-        (item) => `
+      const data = await res.json();
+
+      const itemsHTML = data
+        .map(
+          (item) => `
       <li class="summary-component__item summary-component__item--${item.category.toLowerCase().replace(/\s+/g, "-")}">
         <img class="summary-component__item-icon" src="${item.icon}" alt="" />
         <span class="summary-component__item-title">${item.category}</span>
@@ -22,14 +28,15 @@ async function loadScores() {
         </div>
       </li>
     `,
-      )
-      .join("");
+        )
+        .join("");
 
-    scoreListEl.innerHTML = itemsHTML;
-  } catch (err) {
-    console.error(err);
-    scoreListEl.innerHTML = "<li>Failed to load data</li>";
+      scoreListEl.innerHTML = itemsHTML;
+    } catch (err) {
+      console.error(err);
+      scoreListEl.innerHTML = "<li>Failed to load data</li>";
+    }
   }
-}
 
-loadScores();
+  loadScores();
+});
